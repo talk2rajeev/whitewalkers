@@ -1,0 +1,42 @@
+.filter-wrapper {
+    display: grid;
+    grid-template-columns: 80px 94px 50px;
+    margin-bottom: 20px;
+    grid-gap: 8px;
+}
+
+select {
+    padding: 5px 3px;
+    border-radius: 3px;
+    border: 2px solid #666;
+}
+
+.sync-icon {
+    align-self: center;
+    cursor: pointer;
+}
+
+.team-filter-wrapper {
+    position: absolute;
+    top: 68px;
+    right: 15px;
+}
+
+.team-filter {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    column-gap: 10px;
+}
+
+@media only screen and (max-width: 468px) {
+    .team-filter-wrapper {
+        top: 108px;
+        right: 18px;
+    }
+    .team-filter {
+        display: grid;
+        grid-template-columns: 30px 30px 30px;
+        column-gap: 10px;
+    }
+} 
+

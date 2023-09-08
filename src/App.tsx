@@ -2,10 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { RouterProvider } from "react-router-dom";
+import AppRouter from './AppRoutes';
+
+export const baseUrl = 'http://localhost:4000';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -18,7 +23,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <RouterProvider router={AppRouter} />
     </div>
   );
 }

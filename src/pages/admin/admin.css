@@ -1,0 +1,126 @@
+.team-fund-card {
+    position: relative;
+    background: #fff;
+    cursor: pointer;
+}
+.list-grid {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr 1fr 100px;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 2px 0;
+}
+
+.list-grid > div {
+    position: relative;
+}
+
+.retained-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #1f9e3f;
+    vertical-align: middle;
+}
+
+.retained-icon.xs {
+    width: 14px;
+    height: 14px;
+}
+
+.dialog {
+    width: 60%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -30%;
+    border: 1px solid #cdcdcd;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 100;
+    background: #fff;
+    box-shadow: -1px 2px 6px 4px #999;
+}
+
+.player-img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.close-icon {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 140px 100px 200px;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 2px 0;
+}
+
+.cell {
+    padding: 8px;
+}
+
+.player-name {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.player-info-card {
+    border: 1px solid #ecebeb;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.desc-txt-color {
+    color: #555;
+    font-size: 12px;
+}
+.desc-txt-color > span {
+    font-weight: bold;
+}
+.team-fund-bal {
+    display: grid;
+    grid-template-columns: 115px 115px 115px;
+    column-gap: 5px;
+}
+.team-fund-bal > div {
+    display: grid;
+    grid-template-columns: 30px 80px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+    padding: 0 0 5px 10px;
+}
+.balance {
+    font-size: 11px;
+    align-self: center;
+}
+
+@media only screen and (max-width: 468px) {
+    .tab-mt {
+        margin-top: 28px;
+    }
+    .team-fund-bal {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .dialog {
+        width: 330px;
+        margin-left: -165px;
+        border: 1px solid #cdcdcd;
+        border-radius: 4px;
+        padding: 20px;
+    }
+    .team-fund-bal {
+        justify-content: center;
+    }
+}

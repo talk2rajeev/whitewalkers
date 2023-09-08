@@ -1,0 +1,58 @@
+.logo-img{
+    width: 60px;
+}
+
+.ant-col-xs-24 {
+    text-align: center;
+}
+.ant-col-xs-20, 
+.ant-col-sm-20,
+.ant-col-md-20,
+.ant-col-lg-20,
+.ant-col-xl-20 {
+ text-align: right;
+}
+
+.app-header {
+    background-image: linear-gradient(to right, #fff , #5267c1);
+    padding: 0 10px;
+}
+
+.appheader-links > a {
+    margin-left: 10px;
+    color: #fff;
+}
+.banner{
+    position: relative;
+    text-align: center;
+    padding-top: 200px;
+}
+.banner-img {
+    width: 400px;
+}
+.team-logo-on-banner {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    display: block;
+}
+.team-logo-on-banner > .team-logo-grid{
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: space-around;
+}
+.team-logo-grid > img {
+    width: 140px;
+}
+
+@media only screen and (max-width: 468px) {
+    .team-logo-on-banner {
+        top: 15px;
+    }
+    .team-logo-grid > img {
+        width: 50px;
+    }
+    .banner{
+        padding-top: 140px;
+    }
+}

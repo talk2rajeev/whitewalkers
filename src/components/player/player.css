@@ -1,0 +1,79 @@
+.player-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background: #0d1635;
+    border-radius: 5;
+    height: 150px;
+    position: relative;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.grid-item-inner {
+    display: grid;
+    justify-content: end;
+}
+
+.name-pic-grid {
+    display: grid;
+    grid-template-columns: auto 100px;
+}
+
+.p-name {
+    color: #fff;
+    font-size: 1.6em;
+}
+
+.p-skill {
+    color: #0099ff;
+    font-size: 1em;
+    text-shadow: 1px 1px #0d1635;
+    max-width: 120px;
+    word-break: break-word
+}
+
+.p-baseprice {
+    color: #ddd; 
+    font-size: .8em;
+    margin-top: 10;
+}
+
+.p-soldto {
+    color: #ddd;
+    font-size: .8em;
+    margin-top: 3;
+}
+
+.p-img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.retained-icn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    border-radius: 50%;
+    border: 3px solid #0d1635;
+}
+
+@media only screen and (max-width: 600px) {
+    .player-grid {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .grid-item {
+        margin-bottom: 10px;
+    }
+}

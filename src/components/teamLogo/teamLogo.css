@@ -1,0 +1,21 @@
+.logo-sm {
+    width: 30px;
+}
+.logo-md {
+    width: 50px;
+}
+.logo-lg {
+    width: 80px;
+}
+
+@media only screen and (max-width: 468px) {
+    .logo-sm {
+        width: 20px;
+    }
+    .logo-md {
+        width: 30px;
+    }
+    .logo-lg {
+        width: 60px;
+    }
+} 
